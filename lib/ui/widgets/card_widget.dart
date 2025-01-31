@@ -23,7 +23,7 @@ class CardWidget extends StatelessWidget {
             clipper:
                 ClipContainer(cutHeight: clippedHeight, cutWidth: clippedWidth),
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 10),
+              padding: EdgeInsets.symmetric(horizontal: 8),
               decoration: BoxDecoration(
                 border: Border.all(),
                 gradient: LinearGradient(
@@ -60,7 +60,7 @@ class CardWidget extends StatelessWidget {
                     ],
                   ),
                   SizedBox(
-                    height: 30,
+                    height: 10,
                   ),
                   Container(
                     width: width - clippedWidth,
