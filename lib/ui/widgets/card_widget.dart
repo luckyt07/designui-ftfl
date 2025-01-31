@@ -12,7 +12,7 @@ class CardWidget extends StatelessWidget {
     final double clippedWidth = 150;
     final double clippedHeight = 40;
     final screenSize = MediaQuery.of(context).size;
-    final width = screenSize.width - 20;
+    final width = screenSize.width - 50;
 
     return Container(
       margin: EdgeInsets.all(15),

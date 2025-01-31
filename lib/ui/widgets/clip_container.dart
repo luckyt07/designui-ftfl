@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ftfl_technology_task/utils/constants.dart';
 
 class ClipContainer extends CustomClipper<Path> {
   final double cutWidth; // Width of the bottom-right cut portion
@@ -28,15 +29,15 @@ class ClipContainer extends CustomClipper<Path> {
     path.lineTo(width, size.height - cutHeight);
 
     path.arcToPoint(
-      Offset(size.width - cutWidth, (size.height - cutHeight)+radius),
+      Offset(size.width - cutWidth, (size.height - cutHeight) + radius),
       radius: Radius.circular(radius),
       clockwise: false,
     );
 
     path.lineTo(size.width - cutWidth, size.height - radius);
 
-path.arcToPoint(
-      Offset((size.width - cutWidth) - radius , size.height),
+    path.arcToPoint(
+      Offset((size.width - cutWidth) - radius, size.height),
       radius: Radius.circular(radius),
     );
 

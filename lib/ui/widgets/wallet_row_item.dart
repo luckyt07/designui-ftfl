@@ -26,7 +26,7 @@ class WalletRowItem extends StatelessWidget {
     final double clippedWidth = 150;
     final double radius  = 10;
     ;
-    final width = size.width - (clippedWidth + 30);
+    final width = size.width - (clippedWidth + 60);
     final double clippedHeight = 40;
     return Container(
       padding: EdgeInsets.only(left: 15, right: 15),
